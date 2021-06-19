@@ -247,9 +247,9 @@
   #define THERMAL_PROTECTION_PERIOD 40        // Seconds
   #define THERMAL_PROTECTION_HYSTERESIS 4     // Degrees Celsius
 
-  //#define ADAPTIVE_FAN_SLOWING              // Slow part cooling fan if temperature drops
+  #define ADAPTIVE_FAN_SLOWING              // Slow part cooling fan if temperature drops
   #if BOTH(ADAPTIVE_FAN_SLOWING, PIDTEMP)
-    //#define NO_FAN_SLOWING_IN_PID_TUNING    // Don't slow fan speed during M303
+    #define NO_FAN_SLOWING_IN_PID_TUNING    // Don't slow fan speed during M303
   #endif
 
   /**
@@ -1782,12 +1782,12 @@
 // Classic UI Options
 //
 #if TFT_SCALED_DOGLCD
-  //#define TFT_MARLINUI_COLOR 0xFFFF // White
-  //#define TFT_MARLINBG_COLOR 0x0000 // Black
-  //#define TFT_DISABLED_COLOR 0x0003 // Almost black
-  //#define TFT_BTCANCEL_COLOR 0xF800 // Red
-  //#define TFT_BTARROWS_COLOR 0xDEE6 // 11011 110111 00110 Yellow
-  //#define TFT_BTOKMENU_COLOR 0x145F // 00010 100010 11111 Cyan
+  #define TFT_MARLINUI_COLOR 0xFFFF // White
+  #define TFT_MARLINBG_COLOR 0x0000 // Black
+  #define TFT_DISABLED_COLOR 0x0003 // Almost black
+  #define TFT_BTCANCEL_COLOR 0xF800 // Red
+  #define TFT_BTARROWS_COLOR 0xDEE6 // 11011 110111 00110 Yellow
+  #define TFT_BTOKMENU_COLOR 0x145F // 00010 100010 11111 Cyan
 #endif
 
 //
@@ -1920,9 +1920,9 @@
 
 #if EITHER(MESH_BED_LEVELING, AUTO_BED_LEVELING_UBL)
   // Override the mesh area if the automatic (max) area is too large
-  //#define MESH_MIN_X MESH_INSET
-  //#define MESH_MIN_Y MESH_INSET
-  #define MESH_MAX_X X_BED_SIZE - (MESH_INSET)
+  #define MESH_MIN_X MESH_INSET
+  #define MESH_MIN_Y MESH_INSET
+  #define MESH_MAX_X X_BED_SIZE - (MESH_INSET + 10)
   #define MESH_MAX_Y Y_BED_SIZE - (MESH_INSET)
 #endif
 
