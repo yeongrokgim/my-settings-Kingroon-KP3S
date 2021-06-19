@@ -32,4 +32,4 @@ cp .pio/build/mks_robin_nano35/Robin_nano35.bin /media/sdcard/robin_nano.bin
 
 - Poweroff your KP3S.
 - Put SD card with `robin_nano.bin` into KP3S.
-- Power on (You'll see `TFT Update...` on screen.)
+- Power on (You'll see `TFT Updating` on screen.)
