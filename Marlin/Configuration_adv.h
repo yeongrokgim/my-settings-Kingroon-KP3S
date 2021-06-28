@@ -1782,12 +1782,12 @@
 // Classic UI Options
 //
 #if TFT_SCALED_DOGLCD
-  #define TFT_MARLINUI_COLOR 0xFFFF // White
-  #define TFT_MARLINBG_COLOR 0x0000 // Black
-  #define TFT_DISABLED_COLOR 0x0003 // Almost black
-  #define TFT_BTCANCEL_COLOR 0xF800 // Red
-  #define TFT_BTARROWS_COLOR 0xDEE6 // 11011 110111 00110 Yellow
-  #define TFT_BTOKMENU_COLOR 0x145F // 00010 100010 11111 Cyan
+  // #define TFT_MARLINUI_COLOR 0xFFFF // White
+  // #define TFT_MARLINBG_COLOR 0x0000 // Black
+  // #define TFT_DISABLED_COLOR 0x0003 // Almost black
+  // #define TFT_BTCANCEL_COLOR 0xF800 // Red
+  // #define TFT_BTARROWS_COLOR 0xDEE6 // 11011 110111 00110 Yellow
+  // #define TFT_BTOKMENU_COLOR 0x145F // 00010 100010 11111 Cyan
 #endif
 
 //
@@ -1913,16 +1913,16 @@
  */
 #if PROBE_SELECTED && !IS_KINEMATIC
   //#define PROBING_MARGIN_LEFT PROBING_MARGIN
-  #define PROBING_MARGIN_RIGHT PROBING_MARGIN + 10
+  //#define PROBING_MARGIN_RIGHT PROBING_MARGIN
   //#define PROBING_MARGIN_FRONT PROBING_MARGIN
   //#define PROBING_MARGIN_BACK PROBING_MARGIN
 #endif
 
 #if EITHER(MESH_BED_LEVELING, AUTO_BED_LEVELING_UBL)
   // Override the mesh area if the automatic (max) area is too large
-  #define MESH_MIN_X MESH_INSET
+  #define MESH_MIN_X MESH_INSET + 27
   #define MESH_MIN_Y MESH_INSET
-  #define MESH_MAX_X X_BED_SIZE - (MESH_INSET + 10)
+  #define MESH_MAX_X X_BED_SIZE - (MESH_INSET)
   #define MESH_MAX_Y Y_BED_SIZE - (MESH_INSET)
 #endif
 
