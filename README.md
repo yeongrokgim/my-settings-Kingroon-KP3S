@@ -45,6 +45,22 @@
     - Put SD card with `robin_nano.bin` into KP3S.
     - Power on (You'll see `TFT Updating` on screen.)
 
+## TODO
+
+Follow Instructions [here](https://teachingtechyt.github.io/)
+
+- [x] PID Autotune
+- [ ] First Layer
+- [ ] Baseline Print
+- [ ] Extruder E-steps Calibration
+- [ ] Slicer Flow Calibration
+- [ ] Stepper Motor Driver Current
+- [ ] Retraction Tuning
+- [ ] Temperature Tuning
+- [ ] Accerlation Tuning
+- [ ] Linear Advance
+- [ ] XYZ steps Calibration
+
 ## Resources
 
 - https://bubba.org/kp3s/
