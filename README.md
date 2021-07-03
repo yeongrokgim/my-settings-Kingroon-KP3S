@@ -28,6 +28,14 @@
 
 1. Build firmware.
 
+    1. Open VS Code 
+    1. Install `Auto Build Marlin` extension
+    1. Open `Auto Build Marlin` tab on extension bar on left side.
+    1. Click `Show ABM Panel`
+    1. Click `Build` on the right side of `mks_robin_nano35`
+
+    OR Build manually
+
     ```bash
     cd buildspace
     platformio run -e mks_robin_nano35 ; echo "done" >|/tmp/ipc
